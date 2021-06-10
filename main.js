@@ -42,7 +42,7 @@ class LoanCalculator {
     getMonthlyInstallment() {
         
         let bank = null;
-        let bankName = args.bankName.toUpperCase();
+        let bankName = this.bankName.toUpperCase();
 
         if (bankName === 'METROBANK') {
             bank = new Metrobank(args.loanAmount);
